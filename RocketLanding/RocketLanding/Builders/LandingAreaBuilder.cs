@@ -38,6 +38,8 @@ public class LandingAreaBuilder : ILandingAreaBuilder
         landingArea.LandingPlatformPosition = landingPlatformPosition ?? landingArea.LandingPlatformPosition;
         landingArea.LandingPlatformSize = landingPlatformSize ?? landingArea.LandingPlatformSize;
 
+        SetDefault();
+
         return landingArea;
     }
 
